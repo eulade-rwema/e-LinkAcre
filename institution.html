@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Institution Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("background3.jpg");
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+       
+    section {
+      padding: 0 32px;
+      margin-top:0;
+    }
+   
+    .card {
+      background: #fff;
+      border-radius: 6px; 
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 36px;
+      padding: 24px;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #34495e;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .info-item {
+      background: #ecf0f1;
+      padding: 16px;
+      border-radius: 4px;
+    }
+    .responsibilities-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      border-radius: 6px solid #333;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 36px;
+      transition: box-shadow 0.3s ease;
+      background: #fff;
+      padding: 16px;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: #029a92;
+      color: #fff;
+    }
+    tr:hover {
+      background: #f1f1f1;
+    }
+   
+  </style>
+</head>
+<body>
+ 
+  <section>
+    <h2>Institution Profile</h2>
+    <div class="card">
+      <h3>Ministry of Agriculture</h3>
+      <div class="info-grid">
+        <div class="info-item"><strong>Type:</strong> General Director of RAB</div>
+        <div class="info-item"><strong>Head:</strong> Hon. NKUNDIMANA Jean Cyriaque</div>
+        <div class="info-item"><strong>Contact:</strong> info@rab.gov</div>
+        <div class="info-item"><strong>Location:</strong> Kigali City</div>
+      </div>
+    </div>
+
+    <h2>Assigned Responsibilities</h2>
+    <table class="responsibilities-table">
+      <thead>
+        <tr>
+          <th>Responsibility</th>
+          <th>Region</th>
+          <th>Deadline</th>
+          <th>Assigned Officer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Crop Yield Monitoring</td>
+          <td>All Provinces</td>
+          <td>2026-06-15</td>
+          <td>District Agronomists</td>
+        </tr>
+        <tr>
+          <td>Farmer Registration</td>
+          <td>All Provinces</td>
+          <td>2026-06-20</td>
+          <td>Sector Agronomist and<br> e-LinkAcre Agents</td>
+        </tr>
+        <tr>
+          <td>Supply of Agricultural Inputs</td>
+          <td>All Provinces</td>
+          <td>2026-06-25</td>
+          <td>District Agronomists and <br>Extension Officers</td>
+        </tr>
+        <tr>
+          <td>provision of agricultural services</td>
+          <td>All Provinces</td>
+          <td>2026-06-15</td>
+          <td>e-LinkAcre Agents</td>
+        </tr>
+        <tr>
+          <td>exportation of products</td>
+          <td>All Provinces</td>
+          <td>2026-06-20</td>
+          <td>NAEB Agents and<br> e-LinkAcre Agents</td>
+        </tr>
+        <tr>
+          <td>Test standard of production</td>
+          <td> District levels</td>
+          <td>2026-06-25</td>
+          <td>FDA agents and <br> District Agronomists</td>
+        </tr>
+        <tr>
+          <td>Soil Fertility Test</td>
+          <td>sectors levels</td>
+          <td>2026-06-01</td>
+          <td>Sector Agronomist</td>
+        </tr>
+        <tr>
+          <td>Pest Control Training</td>
+          <td>District levels</td>
+          <td>2026-06-10</td>
+          <td>Master trainer in Pest Management</td>
+        </tr>
+        <tr>
+          <td>Seed Distribution</td>
+          <td>All Provinces</td>
+          <td>2026-05-20</td>
+          <td>RAB Agents, Tubura seeds </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>

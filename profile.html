@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Farmer Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("background.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .profile-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+    .profile-header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+      border: 3px solid #1abc9c;
+    }
+    .profile-header h2 {
+      margin: 0;
+      color: #2c3e50;
+    }
+    .profile-header p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .profile-details table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    .profile-details th, .profile-details td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    .profile-details th {
+      background: #45a29e;
+      color: #2c3e50;
+    }
+
+    .modify-btn {
+      background: #45a29e;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      max-width: 100px;
+    }
+    .modify-btn:hover {
+      background: #16a085;
+    }    
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="profile-header">
+      <img src="user-icon.png" alt="Farmer Photo">
+      <div>
+        <h2>Ella K Indebere</h2>
+        <p>District: rwamagana</p>
+        <p>Farm Size: 5 hectares(ha)</p>
+        <p>Status: Active</p>
+      </div>
+    </div>
+    <div class="profile-details">
+      <table>
+        <tr><th>Credential</th><th>Record</th></tr>
+        <tr><td>Farmer ID</td><td>RW-2026-001</td></tr>
+        <tr><td>National ID</td><td>1 1987 8 06231 0 32</td></tr>
+        <tr><td>Phone</td><td>+250 788 123 456</td></tr>
+        <tr><td>Email</td><td>ellak@example.com</td></tr>
+        <tr><td>Crops</td><td>Maize, Beans</td></tr>
+        <tr><td>Cooperative</td><td>Kicukiro Farmers Union</td></tr>
+      </table>
+    </div>
+    <a href="setting.html" class="modify-btn">Modify Profile</a>
+</body>
+</html>

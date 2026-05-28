@@ -1,0 +1,161 @@
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    }
+
+  .left-nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-nav-links img {
+    width: 120px;
+    height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 15px;
+  }
+  .middle-nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .middle-nav-links h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  .middle-nav-links input {
+    padding: 8px;
+    border-radius: 15px;
+    width: 200px;
+    border: 1px solid #ccc;
+    margin-left: 40px;
+  }
+  .right-nav-links, .right-nav-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-right: 15px;
+  }
+  
+   .right-nav-links1 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+  .right-nav-links1 a {
+    color: #333;
+    text-decoration: none;
+    margin: 0px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .dropdown-content {
+    position: relative;
+    display: none;
+    background-color: #f9f9f9;
+    margin: 0;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .right-nav-links1:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background:#029a92;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;  
+    height: 100vh;
+    padding-top: 98px;
+    gap: 0px;
+  }
+ 
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-weight: bold;
+    display: block;
+  }
+  .sidebar a:hover {
+    color:black
+  }
+
+  .content {
+    flex: 1;
+    background-color: #f5f8fc;
+    padding: 0px;
+    display: flex;
+    margin-left: 200px;
+  }
+
+  .content iframe {
+    flex: 1;
+    border: none;
+  }
+</style>
+<body>
+  <div class="header">
+    <div class="left-nav-links">
+      <img src="e-Linkacre logo.png" alt="Logo">
+    </div>
+    <div class="middle-nav-links">
+      <h1>Farmer Portal</h1>
+      <input type="search" placeholder="Search...">
+    </div>
+    <div class="right-nav-links">
+      <a href="homepage.html">home</a>
+    </div>
+  </div>
+<div class="container">
+  <div class="sidebar">
+    <a href="profile.html" target="contentFrame">Profile</a>
+    <a href="inputpage.html" target="contentFrame">Input Portal</a>
+    <a href="production.html" target="contentFrame">Production</a>
+    <a href="report.html" target="contentFrame">Reports</a>
+    <a href="setting.html" target="contentFrame">Settings</a>
+  </div>
+  <div class="content">
+    <iframe name="contentFrame" src="profile.html"></iframe>
+  </div>
+</div>
+</body>
+</html>

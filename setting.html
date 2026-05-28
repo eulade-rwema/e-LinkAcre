@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Farmer Settings Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("background5.jpg");
+      background-size: cover;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .settings-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      max-width: 700px;
+      width: 100%;
+    }
+    h2 {
+      color: #45a29e;
+      margin-bottom: 20px;
+    }
+    .form-section {
+      margin-bottom: 25px;
+    }
+    .form-section label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #34495e;
+    }
+    .form-section input, .form-section select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-section button {
+      background: #1abc9c;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-section button:hover {
+      background: #16a085;
+    }
+  </style>
+</head>
+<body>
+  <div class="settings-card">
+    <h2>Farmer Settings Portal</h2>
+    <div class="form-section">
+      <label for="language">Language Preference</label>
+      <select id="language">
+        <option value="English">English</option>
+        <option value="Kinyarwanda">Kinyarwanda</option>
+        <option value="French">French</option>
+      </select>
+    </div>
+    <div class="form-section">
+      <label for="district">Update District</label>
+      <input type="text" id="district" placeholder="Enter District">
+    </div>
+    <div class="form-section">
+      <label for="password">Change Password</label>
+      <input type="password" id="password" placeholder="New Password">
+      <input type="password" id="confirm-password" placeholder="Confirm Password">
+    </div>
+    <div class="form-section">
+      <label for="notifications">Notification Preferences</label>
+      <select id="notifications">
+        <option value="Email">Email</option>
+        <option value="SMS">SMS</option>
+        <option value="Both">Both</option>
+      </select>
+    </div>
+    <div class="form-section">
+      <a href="farmerpage.html" target="contentframe">
+      <button type="submit">Save Settings</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Farmer Input Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("background.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .portal-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      max-width: 900px;
+      width: 100%;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background: #45a29e;
+      color: white;
+    }
+    .portal-card-1 {
+      flex: 1;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+     tr:hover {
+      background: #f1f1f1;
+    }
+    .button {
+      text-align: right;
+      background: #45a29e;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease, opacity 0.3s ease;
+    }
+    .button:hover {
+      background: #27ae60;
+      opacity: 0.9;
+    }
+    .button:active {
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portal-card">
+    <div>
+    <h2>Farmer Input Portal</h2>
+    <table>
+      <tr><th>Material Requested</th><th>Land Size (ha)</th><th>Supplier Company</th><th>Status</th><th>Payment</th><th>Proof of Payment</th></tr>
+      <tr><td>Fertilizer</td><td>5</td><td>VD General Trading Ltd</td><td>Received</td><td>Paid</td><td>Receipt #12345</td></tr>
+      <tr><td>Maize Seeds</td><td>5</td><td>VD General Trading Ltd</td><td>Pending</td><td>Unpaid</td><td>-</td></tr>
+      <tr><td>Bean Seeds</td><td>3</td><td>VD General Trading Ltd</td><td>Delivered</td><td>Paid</td><td>Receipt #22346</td></tr>
+      <tr><td>Pesticides</td><td>4</td><td>VD General Trading Ltd</td><td>In Progress</td><td>Partial</td><td>Receipt #33456</td></tr>
+      <tr><td>Irrigation Pipes</td><td>6</td><td>VD General Trading Ltd</td><td>Received</td><td>Paid</td><td>Receipt #44567</td></tr>
+      <tr><td>Sprinkler System</td><td>8</td><td>VD General Trading Ltd</td><td>Pending</td><td>Unpaid</td><td>-</td></tr>
+      <tr><td>Harvest Bags</td><td>5</td><td>VD General Trading Ltd</td><td>Delivered</td><td>Paid</td><td>Receipt #55678</td></tr>
+      <tr><td>Harvest Knives</td><td>2</td><td>VD General Trading Ltd</td><td>Received</td><td>Paid</td><td>Receipt #66789</td></tr>
+      <tr><td>Water Pumps</td><td>10</td><td>VD General Trading Ltd</td><td>Pending</td><td>Unpaid</td><td>-</td></tr>
+      <tr><td>Drip Irrigation Kit</td><td>7</td><td>VD General Trading Ltd</td><td>Delivered</td><td>Paid</td><td>Receipt #77890</td></tr>
+      <tr><td>Harvest Baskets</td><td>4</td><td>VD General Trading Ltd</td><td>In Progress</td><td>Partial</td><td>Receipt #88901</td></tr>
+      <tr><td>Onion Seeds</td><td>3</td><td>VD General Trading Ltd</td><td>Received</td><td>Paid</td><td>Receipt #99012</td></tr>
+      <tr><td>Potato Tubers</td><td>6</td><td>VD General Trading Ltd</td><td>Pending</td><td>Unpaid</td><td>-</td></tr>
+      <tr><td>Sorghum Seeds</td><td>5</td><td>VD General Trading Ltd</td><td>Delivered</td><td>Paid</td><td>Receipt #10123</td></tr>
+      <tr><td>Groundnut Seeds</td><td>7</td><td>VD General Trading Ltd</td><td>Received</td><td>Paid</td><td>Receipt #11234</td></tr>
+      <tr><td>Sunflower Seeds</td><td>8</td><td>VD General Trading Ltd</td><td>Pending</td><td>Unpaid</td><td>-</td></tr>
+      <tr><td>Sweet Potato Vines</td><td>6</td><td>VD General Trading Ltd</td><td>Delivered</td><td>Paid</td><td>Receipt #12345</td></tr>
+      <tr><td>Avocado Seedlings</td><td>4</td><td>VD General Trading Ltd</td><td>In Progress</td><td>Partial</td><td>Receipt #13456</td></tr>
+      <tr><td>Mango Seedlings</td><td>5</td><td>VD General Trading Ltd</td><td>Received</td><td>Paid</td><td>Receipt #14567</td></tr>
+  </table>
+    </table>
+  </div>
+   <div class="portal-card-1">
+      <a href="new-inputpage.html">
+        <button class="button">Request New Material</button>
+      </a>
+   </div>
+  </div>
+</body>
+</html>

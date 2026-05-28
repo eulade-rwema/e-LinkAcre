@@ -1,0 +1,122 @@
+ 
+ <style>
+  
+    .main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .card h3 {
+      color: rgb(7,142,206);
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .button {
+      background-color: rgb(7,142,206);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: rgb(10,102,194);
+    }
+ </style>
+ <div class="main">
+
+    <div class="card">
+      <h3>Assigned Data</h3>
+      <table>
+        <tr>
+          <th>Crop</th>
+          <th>Region</th>
+          <th>Yield Data</th>
+          <th>Last Updated</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td>Wheat</td>
+          <td>Gicumbi</td>
+          <td>850 kg</td>
+          <td>2026-05-09</td>
+          <td><button class="button">Modify</button></td>
+        </tr>
+        <tr>
+          <td>Rice</td>
+          <td>Rusizi</td>
+          <td>1350 kg</td>
+          <td>2026-05-08</td>
+          <td><button class="button">Modify</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>Farmer Registrations</h3>
+      <table>
+        <tr>
+          <th>Farmer Name</th>
+          <th>District</th>
+          <th>Registered Crop</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td>Jean Mukasa</td>
+          <td>Gasabo</td>
+          <td>Banana</td>
+          <td>Approved</td>
+          <td><button class="button">View</button></td>
+        </tr>
+        <tr>
+          <td>Aline Uwimana</td>
+          <td>Musanze</td>
+          <td>Irish Potato</td>
+          <td>Pending</td>
+          <td><button class="button">Approve</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Modification Controls -->
+    <div class="card">
+      <h3>Modification Controls</h3>
+      <p>Access Level: Edit Data & Approve Reports</p>
+      <button class="button">Add New Data</button>
+      <button class="button">Approve Pending Reports</button>
+      <button class="button">Export Data</button>
+    </div>
+
+    <!-- Analytics -->
+    <div class="card">
+      <h3>Analytics Overview</h3>
+      <p>Crop Yield Trends, Farmer Registrations, District Comparisons</p>
+      <button class="button">View Charts</button>
+    </div>
+  </div>

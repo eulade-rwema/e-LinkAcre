@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up - e-LinkAcre</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-image: url("background.jpg");
+      background-size: cover;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background-color:#fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .nav-links a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #45a29e;
+    }
+
+    .signup-card {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 350px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .signup-card h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .signup-card p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .signup-card input,
+    .signup-card select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .checkbox::placeholder {
+      color: #555;
+    }
+
+    .signup-btn {
+      background-color:#45a29e;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 12px;
+      width: 100%;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .signup-btn:hover {
+      background-color: #45a29e;
+    }
+
+    .in-link {
+      color: black;
+      text-decoration: none;
+    }
+
+    .terms {
+      text-align: center;
+      margin-top: 20px;
+      border: none;
+      transition: transform 0.3s ease;
+    }
+
+    .terms button {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 8px 15px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    .terms button:hover {
+      background-color: #45a29e;
+      border: none;
+      transform: scale(1.1);
+    }
+  
+    .footer {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      background-color: #fdf6e3;
+      padding: 40px;
+      margin-top: 40px;
+      text-align: left;
+    }
+
+   .footer {
+      background: #333;
+      color: white;
+      padding: 40px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer h2 {
+      margin-bottom: 10px;
+      color: #45a29e;;
+    }
+
+    .footer p {
+      margin: 5px 0;
+    }
+    .footer p:hover{
+      color: #45a29e;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="e-Linkacre logo.png" alt="e-LinkAcre logo">
+    <div class="nav-links">
+      <a href="homepage.html">Home</a>
+      <a href="governmentpage.html">Government</a>
+      <a href="farmers.html">Farmers</a>
+      <a href="buyers.html">Buyers</a>
+      <a href="updatepage.html">Update</a>
+      <a href="aboutpage.html">About Us</a>
+    </div>
+  </div>
+  <div class="signup-card">
+    <h2>Create Account</h2>
+    <p>Start connecting farmers, buyers, and government today</p>
+
+    <form>
+      <label>User Category</label>
+      <select required>
+        <option selected>Please Select your Category</option>
+        <option>Farmer</option>
+        <option>Government</option>
+        <option>Buyer</option>
+      </select>
+
+      <label>Your Name</label>
+      <input type="text" placeholder="Your name" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="you@mail.com" required>
+
+      <label>Password</label>
+      <input type="password" placeholder="At least 8 characters" required>
+
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Re-enter password" required>
+
+      <button type="submit" class="signup-btn">Create Account →</button>
+    </form>
+
+    <p class="signin-text">Already have an account? <a class="in-link" href="loginpage.html">Sign in</a></p>
+  </div>
+
+
+    <div class="terms">
+      <button>User Guide</button>
+      <button>Privacy Policy</button>
+      <button>Terms</button>
+    </div>
+
+     <footer class="footer">
+    <div>
+      <h2>Quick Links</h2>
+      <p>RAB Staff</p>
+      <p>NAEB Staff</p>
+      <p>e-LinkAcre Agent</p>
+      <p>District Agronomist</p>
+    </div>
+    <div>
+      <h2>Contact Us</h2>
+      <p>Email: info@e-linkAcre.rw</p>
+      <p>Mobile: +250 798 721 567 | Toll Free: 7456</p>
+      <p>Location: Jali, Gasabo-Rwanda</p>
+      <p>P. O. Box 12345, Kigali, Rwanda</p>
+    </div>
+    <div>
+      <h2>Follow Us</h2>
+      <p>Facebook: e-LinkAcre</p>
+      <p>Twitter: @eLinkAcre</p>
+      <p>Instagram: @eLinkAcre</p>
+      <p>LinkedIn: e-LinkAcre</p>
+    </div>
+  </footer>
+</body>
+</html>
