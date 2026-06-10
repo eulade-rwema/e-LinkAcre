@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f7;
+  padding: 40px;
+  background-image:url("../images/background3.jpg") ;
+  background-size: cover;
+}
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+h3 {
+  color: #029a92;
+}
+.report-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background: #029a92;
+  color: black;
+}
+tr:nth-child(even) {
+  background: #fafafa;
+}
+.summary {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #34495e;
+}
+.production-box-1 {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  text-align: right;
+  background: #45a29e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+.button:hover {
+  background: #27ae60;
+  opacity: 0.9;
+}
+.button:active {
+  opacity: 0.6;
+}

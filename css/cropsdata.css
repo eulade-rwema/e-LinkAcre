@@ -1,0 +1,46 @@
+body {
+      font-family: Arial, sans-serif;
+      background-image: url("../images/background2.jpg");
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+   
+    section {
+      padding: 0px 32px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: black;
+      margin-bottom: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: #029a92;
+      color: #fff;
+    }
+  
+    tr:hover {
+      background: #f1f1f1;
+      cursor: pointer;
+    }
+    .status {
+      padding: 4px 8px;
+      border-radius: 4px;
+      color:black;
+      background-color: #029a92;
+    }
+      .status.Pending  {
+        background-color: #f39c12;
+        color: white;
+      }

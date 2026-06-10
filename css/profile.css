@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("../images/background6.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.profile-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid #1abc9c;
+}
+.profile-header h2 {
+  margin: 0;
+  color: #2c3e50;
+}
+.profile-header p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.profile-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.profile-details th, .profile-details td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.profile-details th {
+  background: #45a29e;
+  color: #2c3e50;
+}
+
+.modify-btn {
+  background: #45a29e;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  max-width: 100px;
+}
+.modify-btn:hover {
+  background: #16a085;
+}

@@ -1,0 +1,36 @@
+body {
+  background-image: url("../images/background4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+      display: flex;
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 40px;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+    .form-section {
+      margin-top: 20px;
+    }
+    .form-section input, .form-section select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-section button {
+      background: #1abc9c;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-section button:hover {
+      background: #16a085;
+    }

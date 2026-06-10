@@ -1,0 +1,55 @@
+ body{
+    margin: 50px 50px;
+    background-image: url("../images/background7.jpg");
+    background-size: cover;
+
+  }
+  .container {
+    max-width: 300px;
+    background-color: rgb(228, 184, 102);
+    margin: 0 auto;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    font-family: georgia;
+    text-align: center;
+    border-bottom: 4px solid rgb(200, 91, 91)
+  }
+  .header h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+  .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .content h2 {
+    font-family: georgia;
+    text-align: center;
+    color:black;
+    font-size: 30px;
+    margin-top: auto;
+    font-weight: bold;
+  }
+  .content p{
+    font-family: georgia;
+    display: flex;
+    margin: 10px;
+  }
+  .content p span {
+    margin-left: auto;
+  }
+  .footer {
+    text-align: center;
+    border-top: 3px solid rgb(200, 91, 91);
+    padding-top: 20px;
+  }
+  .footer p {
+    margin-bottom: 0;
+  }
+  .footer a {
+    color: black;
+  }

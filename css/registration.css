@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 32px;
+}
+h2 {
+  color: white;
+  margin-bottom: 16px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background: #45a29e;
+  color: #fff;
+}
+tr:hover {
+  background: #eaeaea;
+}
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  margin-top: 32px;
+}
+
+.status-active {
+  background: #45a29e;
+  color: #fff;
+  padding: 4px 8px;
+
+}
+.status-pending {
+  background: #f39c12;
+  color: #fff;
+  padding: 4px 8px;
+}
+.status-inactive {
+  background: #c0392b;
+  color: #fff;
+  padding: 4px 8px;
+}

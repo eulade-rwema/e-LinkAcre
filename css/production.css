@@ -1,0 +1,32 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f7;
+      padding: 0 20px;
+      background-image: url("../images/background6.jpg");
+      background-size: cover;
+    }
+    h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: white;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background: #45a29e;
+      color: #2c3e50;
+    }
+    
+    tr:hover {
+      background: #f1f1f1;
+    }

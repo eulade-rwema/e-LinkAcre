@@ -1,0 +1,230 @@
+body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background-color:whitesmoke; 
+      color: #333; 
+      text-align: justify;
+      
+    }
+
+    .header {
+      background-color: #ffffff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .nav-links a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #45a29e;
+    }
+  
+    .hero {
+      background-image: url('../images/background2.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; 
+      left: 0;
+      width: 100%; 
+      height: 100%;
+      background-color:   rgba(0, 0, 0, 0.4); 
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+    }
+
+    .hero-content h1 span {
+      font-weight: bold;
+      color: #66fcf1; 
+    }
+
+    .search-box {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-box input {
+      padding: 12px 20px;
+      width: 320px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      font-size: 1em;
+    }
+
+    .search-box button {
+      padding: 12px 20px;
+      background-color: #45a29e;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .search-box button:hover {
+      background-color:  #45a29e;
+      color: #333;
+    }
+
+    .search-icon {
+      height: 20px;
+      margin-top: 4px;
+    }
+    
+    .updates {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .updates h2 {
+      color: #45a29e;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .update-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .update-card {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      margin-bottom: 30px;
+    }
+
+    .update-card:hover {
+      transform: scale(1.05);
+    }
+
+    .update-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .update-card h3 {
+      color: #333;
+      margin: 15px;
+    }
+
+    .update-card p {
+      color: #555;
+      margin: 0 15px 15px;
+      line-height: 1.5;
+    }
+
+    .update-card a {
+      display: inline-block;
+      margin: 0 15px 15px;
+      color: #45a29e;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: end;
+    }
+
+    .update-card a:hover {
+      color: #66fcf1;
+    }
+    
+    .explore-button {
+      background-color: #45a29e;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 30px; 
+      margin-right: 500px; 
+    }
+
+    .button:hover, .explore-button:hover {
+      background-color: #45a29e;;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      opacity: 0.9;
+    }
+
+    .button:active, .explore-button:active {
+      background-color: #45a29e;;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      opacity: 0.6;
+    }
+    .in-link-1 {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+
+    .footer {
+      background: #333;
+      color: white;
+      padding: 40px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      border-top: 1px solid #ddd;
+    }
+
+    .footer h2 {
+      color: #45a29e;
+      margin-bottom: 10px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      color: white;
+    }
+     .footer p:hover{
+      color: #45a29e;
+     }
