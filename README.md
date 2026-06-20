@@ -65,7 +65,7 @@ e-LinkAcre benefits buyers by:
 2. Navigate using the menu bar to explore different sections.  
 3. Farmers and buyers can check **Updates** for harvest details.  
 4. Government staff can use their portal for approvals and monitoring.  
-5. Sign up via `loginpage.html` to create an account.  
+5. Sign up via `pages/loginpage.html` to create an account.  
 
 ---
 
