@@ -14,10 +14,10 @@
 
   <div class="orders-container">
     <div class="orders-tabs">
-      <button class="tab-btn active" onclick="filterTab('all', this)">All Orders</button>
-      <button class="tab-btn" onclick="filterTab('pending', this)">Pending</button>
-      <button class="tab-btn" onclick="filterTab('in-transit', this)">In Transit</button>
-      <button class="tab-btn" onclick="filterTab('completed', this)">Completed</button>
+      <button class="tab-btn active">All Orders</button>
+      <button class="tab-btn">Pending</button>
+      <button class="tab-btn">In Transit</button>
+      <button class="tab-btn">Completed</button>
     </div>
 
     <table id="orders-table">
@@ -34,7 +34,6 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Order 1 -->
         <tr class="order-row" data-status="in-transit">
           <td>#ELA-2401</td>
           <td>High-Grade Wheat</td>
@@ -43,9 +42,8 @@
           <td>1,632,000 RWF</td>
           <td>2026-06-18</td>
           <td><span class="status-badge in-transit">in-transit</span></td>
-          <td><button class="track-btn" onclick="openTrackModal('#ELA-2401', 'High-Grade Wheat', 'Jean K. (Musanze)', 'in-transit')">Track</button></td>
+          <td><button class="track-btn">Track</button></td>
         </tr>
-        <!-- Order 2 -->
         <tr class="order-row" data-status="completed">
           <td>#ELA-2402</td>
           <td>Long-Grain Rice</td>
@@ -54,9 +52,8 @@
           <td>2,856,000 RWF</td>
           <td>2026-06-12</td>
           <td><span class="status-badge completed">completed</span></td>
-          <td><button class="track-btn" onclick="openTrackModal('#ELA-2402', 'Long-Grain Rice', 'Anicet M. (Rusizi)', 'completed')">Track</button></td>
+          <td><button class="track-btn">Track</button></td>
         </tr>
-        <!-- Order 3 -->
         <tr class="order-row" data-status="pending">
           <td>#ELA-2403</td>
           <td>Red Sorghum</td>
@@ -65,9 +62,8 @@
           <td>1,071,000 RWF</td>
           <td>2026-06-20</td>
           <td><span class="status-badge pending">pending</span></td>
-          <td><button class="track-btn" onclick="openTrackModal('#ELA-2403', 'Red Sorghum', 'Marie V. (Bugesera)', 'pending')">Track</button></td>
+          <td><button class="track-btn">Track</button></td>
         </tr>
-        <!-- Order 4 -->
         <tr class="order-row" data-status="completed">
           <td>#ELA-2404</td>
           <td>Irish Potatoes</td>
@@ -76,94 +72,26 @@
           <td>612,000 RWF</td>
           <td>2026-06-05</td>
           <td><span class="status-badge completed">completed</span></td>
-          <td><button class="track-btn" onclick="openTrackModal('#ELA-2404', 'Irish Potatoes', 'Pierre N. (Burera)', 'completed')">Track</button></td>
+          <td><button class="track-btn">Track</button></td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <!-- Tracking Modal -->
   <div id="trackModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
         <h2 id="modal-track-id">Track Order</h2>
-        <button class="close-btn" onclick="closeTrackModal()">&times;</button>
+        <button class="close-btn">&times;</button>
       </div>
       <div>
         <p style="margin: 0; font-size: 14px; color: #64748b;">Crop: <strong id="modal-crop-name" style="color: #0f172a;">-</strong></p>
         <p style="margin: 5px 0 0 0; font-size: 14px; color: #64748b;">Farmer: <strong id="modal-farmer-name" style="color: #0f172a;">-</strong></p>
       </div>
       <div class="timeline" id="tracking-timeline">
-        <!-- Will be dynamically updated by javascript -->
       </div>
     </div>
   </div>
 
-  <script>
-    function filterTab(status, btnElement) {
-      // Toggle active button class
-      const buttons = document.querySelectorAll('.tab-btn');
-      buttons.forEach(btn => btn.classList.remove('active'));
-      btnElement.classList.add('active');
-
-      // Filter rows
-      const rows = document.querySelectorAll('.order-row');
-      rows.forEach(row => {
-        if (status === 'all' || row.dataset.status === status) {
-          row.style.display = 'table-row';
-        } else {
-          row.style.display = 'none';
-        }
-      });
-    }
-
-    function openTrackModal(orderId, crop, farmer, status) {
-      document.getElementById('modal-track-id').innerText = "Track Order " + orderId;
-      document.getElementById('modal-crop-name').innerText = crop;
-      document.getElementById('modal-farmer-name').innerText = farmer;
-
-      const timelineContainer = document.getElementById('tracking-timeline');
-      timelineContainer.innerHTML = ''; // Reset timeline
-
-      const steps = [
-        { title: "Order Placed", desc: "Purchase order created and payment verified.", time: "June 20, 2026" },
-        { title: "Agronomist Approved", desc: "District Agronomist certified quality grade and quantity.", time: "June 20, 2026" },
-        { title: "Farmer Dispatched", desc: "Farmer handed over harvest to regional e-LinkAcre logistics center.", time: "June 21, 2026" },
-        { title: "In Transit", desc: "Crop cargo is on the way to your delivery address.", time: "June 21, 2026" },
-        { title: "Delivered", desc: "Cargo successfully delivered and signed by buyer.", time: "Completed" }
-      ];
-
-      let currentStepIdx = 0;
-      if (status === 'pending') {
-        currentStepIdx = 1; // Placed & Agronomist approved is pending/done
-      } else if (status === 'in-transit') {
-        currentStepIdx = 3; // Dispatched & In Transit is active
-      } else if (status === 'completed') {
-        currentStepIdx = 4; // All steps done
-      }
-
-      steps.forEach((step, idx) => {
-        const isActive = idx <= currentStepIdx;
-        const timelineItem = document.createElement('div');
-        timelineItem.className = `timeline-item ${isActive ? 'active' : ''}`;
-        
-        timelineItem.innerHTML = `
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-title">${step.title}</span>
-            <span class="timeline-desc">${step.desc}</span>
-            <span class="timeline-time">${isActive ? step.time : 'Pending'}</span>
-          </div>
-        `;
-        timelineContainer.appendChild(timelineItem);
-      });
-
-      document.getElementById('trackModal').style.display = "flex";
-    }
-
-    function closeTrackModal() {
-      document.getElementById('trackModal').style.display = "none";
-    }
-  </script>
 </body>
 </html>

@@ -15,7 +15,7 @@
   <div class="filter-bar">
     <div class="filter-group">
       <label for="crop-type">Crop Type</label>
-      <select id="crop-type" onchange="filterCrops()">
+      <select id="crop-type">
         <option value="all">All Crops</option>
         <option value="wheat">Wheat</option>
         <option value="rice">Rice</option>
@@ -27,7 +27,7 @@
     </div>
     <div class="filter-group">
       <label for="region">Region</label>
-      <select id="region" onchange="filterCrops()">
+      <select id="region">
         <option value="all">All Provinces</option>
         <option value="Northern">Northern Province</option>
         <option value="Eastern">Eastern Province</option>
@@ -37,7 +37,7 @@
     </div>
     <div class="filter-group">
       <label for="price-sort">Sort By</label>
-      <select id="price-sort" onchange="sortCrops()">
+      <select id="price-sort">
         <option value="default">Default</option>
         <option value="low-high">Price: Low to High</option>
         <option value="high-low">Price: High to Low</option>
@@ -46,7 +46,6 @@
   </div>
 
   <div class="crops-grid" id="crops-grid">
-    <!-- Crop Card 1 -->
     <div class="crop-card" data-type="wheat" data-region="Northern" data-price="320">
       <div class="crop-img-container">
         <img src="../images/image3.jpg" alt="Wheat">
@@ -72,12 +71,11 @@
             <span class="price-amt">320 RWF</span>
             <span class="price-unit">per Kilogram</span>
           </div>
-          <button class="buy-btn" onclick="openOrderModal('High-Grade Wheat', 'Jean K. (Musanze)', 320, 12)">Buy Now</button>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
 
-    <!-- Crop Card 2 -->
     <div class="crop-card" data-type="rice" data-region="Eastern" data-price="350">
       <div class="crop-img-container">
         <img src="../images/image3a.jpg" alt="Rice">
@@ -103,12 +101,11 @@
             <span class="price-amt">350 RWF</span>
             <span class="price-unit">per Kilogram</span>
           </div>
-          <button class="buy-btn" onclick="openOrderModal('Long-Grain Rice', 'Claudine U. (Kirehe)', 350, 15)">Buy Now</button>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
 
-    <!-- Crop Card 3 -->
     <div class="crop-card" data-type="sorghum" data-region="Eastern" data-price="300">
       <div class="crop-img-container">
         <img src="../images/sorghum.jpg" alt="Sorghum">
@@ -134,12 +131,11 @@
             <span class="price-amt">300 RWF</span>
             <span class="price-unit">per Kilogram</span>
           </div>
-          <button class="buy-btn" onclick="openOrderModal('Red Sorghum', 'Anicet M. (Bugesera)', 300, 8)">Buy Now</button>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
 
-    <!-- Crop Card 4 -->
     <div class="crop-card" data-type="potato" data-region="Northern" data-price="280">
       <div class="crop-img-container">
         <img src="../images/irish potato.jpg" alt="Irish Potatoes">
@@ -165,12 +161,11 @@
             <span class="price-amt">280 RWF</span>
             <span class="price-unit">per Kilogram</span>
           </div>
-          <button class="buy-btn" onclick="openOrderModal('Irish Potatoes', 'Pierre N. (Burera)', 280, 20)">Buy Now</button>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
 
-    <!-- Crop Card 5 -->
     <div class="crop-card" data-type="beans" data-region="Eastern" data-price="400">
       <div class="crop-img-container">
         <img src="../images/beans.jpg" alt="Beans">
@@ -196,12 +191,11 @@
             <span class="price-amt">400 RWF</span>
             <span class="price-unit">per Kilogram</span>
           </div>
-          <button class="buy-btn" onclick="openOrderModal('Mixed Dry Beans', 'Eric R. (Nyagatare)', 400, 10)">Buy Now</button>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
 
-    <!-- Crop Card 6 -->
     <div class="crop-card" data-type="banana" data-region="Eastern" data-price="250">
       <div class="crop-img-container">
         <img src="../images/banana.jpg" alt="Banana">
@@ -227,22 +221,21 @@
             <span class="price-amt">250 RWF</span>
             <span class="price-unit">per Kilogram</span>
           </div>
-          <button class="buy-btn" onclick="openOrderModal('Sweet Cooking Banana', 'Marie M. (Rwamagana)', 250, 6)">Buy Now</button>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- The Order Modal -->
   <div id="orderModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
         <h2 id="modal-crop-title">Order Crop</h2>
-        <button class="close-btn" onclick="closeOrderModal()">&times;</button>
+        <button class="close-btn">&times;</button>
       </div>
       <div class="form-group">
         <label for="order-qty">Quantity to Purchase (Tons)</label>
-        <input type="number" id="order-qty" min="0.1" step="0.1" value="1.0" oninput="calculateTotal()">
+        <input type="number" id="order-qty" min="0.1" step="0.1" value="1.0">
       </div>
       <div class="order-summary">
         <div class="summary-row">
@@ -262,96 +255,8 @@
           <span id="summary-total">0 RWF</span>
         </div>
       </div>
-      <button class="confirm-btn" onclick="confirmPurchase()">Confirm Purchase & Pay</button>
+      <button class="confirm-btn">Confirm Purchase & Pay</button>
     </div>
   </div>
-
-  <script>
-    let activePrice = 0;
-    let maxQuantity = 0;
-    let selectedCrop = "";
-    let selectedFarmer = "";
-
-    function openOrderModal(cropTitle, farmer, price, availableQty) {
-      selectedCrop = cropTitle;
-      selectedFarmer = farmer;
-      activePrice = price;
-      maxQuantity = availableQty;
-      
-      document.getElementById('modal-crop-title').innerText = "Order " + cropTitle;
-      document.getElementById('order-qty').value = "1.0";
-      document.getElementById('order-qty').max = availableQty;
-      document.getElementById('summary-unit-price').innerText = price + " RWF";
-      
-      calculateTotal();
-      document.getElementById('orderModal').style.display = "flex";
-    }
-
-    function closeOrderModal() {
-      document.getElementById('orderModal').style.display = "none";
-    }
-
-    function calculateTotal() {
-      const qtyInput = document.getElementById('order-qty');
-      let qty = parseFloat(qtyInput.value);
-      
-      if (isNaN(qty) || qty <= 0) {
-        qty = 0;
-      }
-      if (qty > maxQuantity) {
-        qty = maxQuantity;
-        qtyInput.value = maxQuantity;
-      }
-      
-      // 1 Ton = 1000 Kg
-      const kgQty = qty * 1000;
-      const subtotal = kgQty * activePrice;
-      const fee = subtotal * 0.02;
-      const total = subtotal + fee;
-      
-      document.getElementById('summary-subtotal').innerText = subtotal.toLocaleString() + " RWF";
-      document.getElementById('summary-fee').innerText = fee.toLocaleString() + " RWF";
-      document.getElementById('summary-total').innerText = total.toLocaleString() + " RWF";
-    }
-
-    function confirmPurchase() {
-      const qty = parseFloat(document.getElementById('order-qty').value);
-      alert(`Success! Your purchase order of ${qty} Tons of "${selectedCrop}" from ${selectedFarmer} has been submitted. It will be routed for logistics & agronomist validation.`);
-      closeOrderModal();
-    }
-
-    function filterCrops() {
-      const cropVal = document.getElementById('crop-type').value;
-      const regionVal = document.getElementById('region').value;
-      const cards = document.querySelectorAll('.crop-card');
-
-      cards.forEach(card => {
-        const typeMatch = (cropVal === 'all' || card.dataset.type === cropVal);
-        const regionMatch = (regionVal === 'all' || card.dataset.region === regionVal);
-        
-        if (typeMatch && regionMatch) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-
-    function sortCrops() {
-      const sortVal = document.getElementById('price-sort').value;
-      const grid = document.getElementById('crops-grid');
-      const cards = Array.from(grid.querySelectorAll('.crop-card'));
-
-      if (sortVal === 'default') return;
-
-      cards.sort((a, b) => {
-        const priceA = parseFloat(a.dataset.price);
-        const priceB = parseFloat(b.dataset.price);
-        return sortVal === 'low-high' ? priceA - priceB : priceB - priceA;
-      });
-
-      cards.forEach(card => grid.appendChild(card));
-    }
-  </script>
 </body>
 </html>

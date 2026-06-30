@@ -9,7 +9,7 @@
 <body>
   <div class="header">
     <div class="left-nav-links">
-      <img src="../images/e-Linkacre logo.png" alt="e-LinkAcre Logo" onclick="window.location.href='../index.html'">
+      <a href="../index.html"><img src="../images/e-Linkacre logo.png" alt="e-LinkAcre Logo"></a>
     </div>
     <div class="middle-nav-links">
       <h1>Buyer Portal</h1>
@@ -30,22 +30,14 @@
 
   <div class="container">
     <div class="sidebar">
-      <a href="buyer-dashboard.html" target="contentFrame" class="active" onclick="setActive(this)">Dashboard</a>
-      <a href="buyer-marketplace.html" target="contentFrame" onclick="setActive(this)">Marketplace</a>
-      <a href="buyer-orders.html" target="contentFrame" onclick="setActive(this)">My Orders</a>
-      <a href="buyer-trends.html" target="contentFrame" onclick="setActive(this)">Market Trends</a>
+      <a href="buyer-dashboard.html" target="contentFrame">Dashboard</a>
+      <a href="buyer-marketplace.html" target="contentFrame">Marketplace</a>
+      <a href="buyer-orders.html" target="contentFrame">My Orders</a>
+      <a href="buyer-trends.html" target="contentFrame">Market Trends</a>
     </div>
     <div class="content">
       <iframe name="contentFrame" src="buyer-dashboard.html"></iframe>
     </div>
   </div>
-
-  <script>
-    function setActive(element) {
-      const links = document.querySelectorAll('.sidebar a');
-      links.forEach(link => link.classList.remove('active'));
-      element.classList.add('active');
-    }
-  </script>
 </body>
 </html>

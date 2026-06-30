@@ -127,7 +127,7 @@ body {
   display: block;
   font-size: 14px;
   font-weight: 500;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 .dropdown-content a:hover {
@@ -145,7 +145,7 @@ body {
   width: 240px;
   display: flex;
   flex-direction: column;
-  background: #0f172a;
+  background: #029a92;
   position: fixed;
   top: 80px;
   left: 0;
@@ -156,7 +156,7 @@ body {
 }
 
 .sidebar a {
-  color: #94a3b8;
+  color: #333;
   text-decoration: none;
   padding: 14px 20px;
   font-weight: 600;
@@ -169,12 +169,6 @@ body {
 }
 
 .sidebar a:hover {
-  color: #ffffff;
-  background-color: #1e293b;
-  border-left-color: #10b981;
-}
-
-.sidebar a.active {
   color: #ffffff;
   background-color: #1e293b;
   border-left-color: #10b981;
