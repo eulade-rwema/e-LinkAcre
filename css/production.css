@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f7fcfa 0%, #e8f6f1 100%);
+  padding: 40px;
+}
+
+.page-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.card-head h2 {
+  color: #1f3d37;
+  margin: 0 0 4px;
+}
+
+.card-head p {
+  margin: 0 0 16px;
+  color: #4b5563;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #dce8e3;
+  text-align: left;
+}
+
+th {
+  background: #14b8a6;
+  color: #fff;
+}
+
+tr:hover {
+  background: #f7fcfa;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crops info</title>
+  <link rel="stylesheet" href="../css/cropsdata.css">
+</head>
+<body>
+  <section>
+    <div class="page-head">
+      <div>
+        <h2>Crop reports</h2>
+        <p>Track crop assignments and their current status.</p>
+      </div>
+      <div class="summary-cards">
+        <div class="mini-card"><strong id="approvedCount">0</strong><span>Approved</span></div>
+        <div class="mini-card"><strong id="pendingCount">0</strong><span>Pending</span></div>
+        <div class="mini-card"><strong id="scheduledCount">0</strong><span>Scheduled</span></div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <input type="search" id="cropSearch" placeholder="Search crop or region...">
+      <div class="filter-group">
+        <button data-filter="all" class="chip active">All</button>
+        <button data-filter="Approved" class="chip">Approved</button>
+        <button data-filter="Pending" class="chip">Pending</button>
+        <button data-filter="Scheduled" class="chip">Scheduled</button>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Crop</th>
+          <th>Region</th>
+          <th>Assigned By</th>
+          <th>Targeted production</th>
+          <th>Time</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Banana</td><td>Eastern Province</td><td>Sector Agronomist</td><td>49,500 tons</td><td>2026-06-10, 08/10</td><td><span class="status pending">Pending</span></td></tr>
+        <tr><td>Irish Potato</td><td>Musanze</td><td>Sector Agronomist</td><td>45,000 tons</td><td>2026-06-10, 08/10</td><td><span class="status approved">Approved</span></td></tr>
+        <tr><td>Health Report Submission</td><td>Northern Province</td><td>Ministry of Health</td><td>49,500 tons</td><td>2026-06-10, 08/10</td><td><span class="status scheduled">Scheduled</span></td></tr>
+        <tr><td>Education Data Update</td><td>Western Province</td><td>Education Board</td><td>49,500 tons</td><td>2026-06-10, 08/10</td><td><span class="status completed">Completed</span></td></tr>
+        <tr><td>Maize</td><td>Southern Province</td><td>District Agronomist</td><td>62,000 tons</td><td>2026-06-12, 09/20</td><td><span class="status approved">Approved</span></td></tr>
+        <tr><td>Rice</td><td>Nyagatare</td><td>Sector Agronomist</td><td>38,000 tons</td><td>2026-06-12, 09/20</td><td><span class="status pending">Pending</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script src="../js/cropsdata.js"></script>
+</body>
+</html>

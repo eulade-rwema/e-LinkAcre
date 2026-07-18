@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Farmer Settings Portal</title>
+  <link rel="stylesheet" href="../css/setting.css">
+</head>
+<body>
+  <div class="settings-card">
+    <h2>Settings</h2>
+    <p class="note">Update your details and keep your account simple.</p>
+
+    <div class="form-section">
+      <label for="language">Language</label>
+      <select id="language">
+        <option value="English">English</option>
+        <option value="Kinyarwanda">Kinyarwanda</option>
+        <option value="French">French</option>
+      </select>
+    </div>
+
+    <div class="form-section">
+      <label for="district">District</label>
+      <input type="text" id="district" placeholder="Enter district">
+    </div>
+
+    <div class="form-section">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="New password">
+      <input type="password" id="confirm-password" placeholder="Confirm password">
+    </div>
+
+    <div class="form-section">
+      <label for="notifications">Notifications</label>
+      <select id="notifications">
+        <option value="Email">Email</option>
+        <option value="SMS">SMS</option>
+        <option value="Both">Both</option>
+      </select>
+    </div>
+
+    <div class="form-section">
+      <button type="button" id="saveBtn">Save settings</button>
+      <p id="saveMsg" class="msg">Your changes will be saved here.</p>
+    </div>
+  </div>
+
+  <script src="../js/farmer-settings.js"></script>
+</body>
+</html>

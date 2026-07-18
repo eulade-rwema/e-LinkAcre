@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up - e-LinkAcre</title>
+  <link rel="stylesheet" href="../css/signuppage.css">
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="../images/e-Linkacre logo.png" alt="e-LinkAcre logo">
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="govportal.html">Government</a>
+      <a href="farmerpage.html">Farmers</a>
+      <a href="buyers.html">Buyers</a>
+      <a href="updatepage.html">Update</a>
+      <a href="aboutpage.html">About Us</a>
+    </div>
+  </div>
+  <div class="signup-card">
+    <h2>Create Account</h2>
+    <p>Start connecting farmers, buyers, and government today</p>
+
+    <form id="signupForm">
+      <label>User Category</label>
+      <select required>
+        <option selected>Please Select your Category</option>
+        <option>Farmer</option>
+        <option>Government</option>
+        <option>Buyer</option>
+      </select>
+
+      <label>Your Name</label>
+      <input type="text" placeholder="Your name" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="you@mail.com" required>
+
+      <label>Password</label>
+      <input type="password" placeholder="At least 8 characters" required>
+
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Re-enter password" required>
+
+      <button type="submit" class="signup-btn">Create Account →</button>
+      <p id="signupMsg" class="form-msg">Your account is ready to be created.</p>
+    </form>
+
+    <p class="signin-text">Already have an account? <a class="in-link" href="loginpage.html">Sign in</a></p>
+  </div>
+
+
+    <div class="terms">
+      <button>User Guide</button>
+      <button>Privacy Policy</button>
+      <button>Terms</button>
+    </div>
+
+     <footer class="footer">
+    <div>
+      <h2>Quick Links</h2>
+      <p>RAB Staff</p>
+      <p>NAEB Staff</p>
+      <p>e-LinkAcre Agent</p>
+      <p>District Agronomist</p>
+    </div>
+    <div>
+      <h2>Contact Us</h2>
+      <p>Email: info@e-linkAcre.rw</p>
+      <p>Mobile: +250 798 721 567 | Toll Free: 7456</p>
+      <p>Location: Jali, Gasabo-Rwanda</p>
+      <p>P. O. Box 12345, Kigali, Rwanda</p>
+    </div>
+    <div>
+      <h2>Follow Us</h2>
+      <p>Facebook: e-LinkAcre</p>
+      <p>Twitter: @eLinkAcre</p>
+      <p>Instagram: @eLinkAcre</p>
+      <p>LinkedIn: e-LinkAcre</p>
+    </div>
+  </footer>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

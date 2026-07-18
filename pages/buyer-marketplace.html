@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crops Marketplace</title>
+  <link rel="stylesheet" href="../css/buyer-marketplace.css">
+  <script src="../js/marketplace.js"></script>
+</head>
+<body>
+  <div class="marketplace-header">
+    <div>
+      <h1>Crops Marketplace</h1>
+      <p>Browse harvests from local farmers and place orders quickly.</p>
+    </div>
+    <div class="market-badge">New offers</div>
+  </div>
+
+  <div class="market-status" id="marketStatus">Browse listings and confirm purchases with one tap.</div>
+
+  <div class="filter-bar">
+    <div class="filter-summary">Choose crops that fit your order plan.</div>
+    <div class="filter-group">
+      <label for="crop-type">Crop Type</label>
+      <select id="crop-type">
+        <option value="all">All Crops</option>
+        <option value="wheat">Wheat</option>
+        <option value="rice">Rice</option>
+        <option value="sorghum">Sorghum</option>
+        <option value="potato">Irish Potato</option>
+        <option value="beans">Beans</option>
+        <option value="banana">Banana</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="region">Region</label>
+      <select id="region">
+        <option value="all">All Provinces</option>
+        <option value="Northern">Northern Province</option>
+        <option value="Eastern">Eastern Province</option>
+        <option value="Southern">Southern Province</option>
+        <option value="Western">Western Province</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="price-sort">Sort By</label>
+      <select id="price-sort">
+        <option value="default">Default</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="crops-grid" id="crops-grid">
+    <div class="crop-card" data-type="wheat" data-region="Northern" data-price="320">
+      <div class="crop-img-container">
+        <img src="../images/image3.jpg" alt="Wheat">
+        <span class="approval-badge">✓ Agronomist Approved</span>
+      </div>
+      <div class="crop-details">
+        <span class="crop-category">Grain</span>
+        <h3 class="crop-title">High-Grade Wheat</h3>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Farmer:</span>
+          <span class="crop-info-value">Jean K. (Musanze)</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Available:</span>
+          <span class="crop-info-value">12.0 Tons</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Harvest Date:</span>
+          <span class="crop-info-value">June 2026</span>
+        </div>
+        <div class="crop-price-section">
+          <div class="crop-price">
+            <span class="price-amt">320 RWF</span>
+            <span class="price-unit">per Kilogram</span>
+          </div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="crop-card" data-type="rice" data-region="Eastern" data-price="350">
+      <div class="crop-img-container">
+        <img src="../images/image3a.jpg" alt="Rice">
+        <span class="approval-badge">✓ Agronomist Approved</span>
+      </div>
+      <div class="crop-details">
+        <span class="crop-category">Grain</span>
+        <h3 class="crop-title">Long-Grain Rice</h3>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Farmer:</span>
+          <span class="crop-info-value">Claudine U. (Kirehe)</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Available:</span>
+          <span class="crop-info-value">15.0 Tons</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Harvest Date:</span>
+          <span class="crop-info-value">May 2026</span>
+        </div>
+        <div class="crop-price-section">
+          <div class="crop-price">
+            <span class="price-amt">350 RWF</span>
+            <span class="price-unit">per Kilogram</span>
+          </div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="crop-card" data-type="sorghum" data-region="Eastern" data-price="300">
+      <div class="crop-img-container">
+        <img src="../images/sorghum.jpg" alt="Sorghum">
+        <span class="approval-badge">✓ Agronomist Approved</span>
+      </div>
+      <div class="crop-details">
+        <span class="crop-category">Grain</span>
+        <h3 class="crop-title">Red Sorghum</h3>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Farmer:</span>
+          <span class="crop-info-value">Anicet M. (Bugesera)</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Available:</span>
+          <span class="crop-info-value">8.0 Tons</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Harvest Date:</span>
+          <span class="crop-info-value">June 2026</span>
+        </div>
+        <div class="crop-price-section">
+          <div class="crop-price">
+            <span class="price-amt">300 RWF</span>
+            <span class="price-unit">per Kilogram</span>
+          </div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="crop-card" data-type="potato" data-region="Northern" data-price="280">
+      <div class="crop-img-container">
+        <img src="../images/irish potato.jpg" alt="Irish Potatoes">
+        <span class="approval-badge">✓ Agronomist Approved</span>
+      </div>
+      <div class="crop-details">
+        <span class="crop-category">Tuber</span>
+        <h3 class="crop-title">Irish Potatoes</h3>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Farmer:</span>
+          <span class="crop-info-value">Pierre N. (Burera)</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Available:</span>
+          <span class="crop-info-value">20.0 Tons</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Harvest Date:</span>
+          <span class="crop-info-value">July 2026 (Expected)</span>
+        </div>
+        <div class="crop-price-section">
+          <div class="crop-price">
+            <span class="price-amt">280 RWF</span>
+            <span class="price-unit">per Kilogram</span>
+          </div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="crop-card" data-type="beans" data-region="Eastern" data-price="400">
+      <div class="crop-img-container">
+        <img src="../images/beans.jpg" alt="Beans">
+        <span class="approval-badge">✓ Agronomist Approved</span>
+      </div>
+      <div class="crop-details">
+        <span class="crop-category">Legume</span>
+        <h3 class="crop-title">Mixed Dry Beans</h3>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Farmer:</span>
+          <span class="crop-info-value">Eric R. (Nyagatare)</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Available:</span>
+          <span class="crop-info-value">10.0 Tons</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Harvest Date:</span>
+          <span class="crop-info-value">May 2026</span>
+        </div>
+        <div class="crop-price-section">
+          <div class="crop-price">
+            <span class="price-amt">400 RWF</span>
+            <span class="price-unit">per Kilogram</span>
+          </div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="crop-card" data-type="banana" data-region="Eastern" data-price="250">
+      <div class="crop-img-container">
+        <img src="../images/banana.jpg" alt="Banana">
+        <span class="approval-badge">✓ Agronomist Approved</span>
+      </div>
+      <div class="crop-details">
+        <span class="crop-category">Fruit</span>
+        <h3 class="crop-title">Sweet Cooking Banana</h3>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Farmer:</span>
+          <span class="crop-info-value">Marie M. (Rwamagana)</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Available:</span>
+          <span class="crop-info-value">6.0 Tons</span>
+        </div>
+        <div class="crop-info-row">
+          <span class="crop-info-label">Harvest Date:</span>
+          <span class="crop-info-value">June 2026</span>
+        </div>
+        <div class="crop-price-section">
+          <div class="crop-price">
+            <span class="price-amt">250 RWF</span>
+            <span class="price-unit">per Kilogram</span>
+          </div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-crop-title">Order Crop</h2>
+        <button class="close-btn">&times;</button>
+      </div>
+      <div class="form-group">
+        <label for="order-qty">Quantity to Purchase (Tons)</label>
+        <input type="number" id="order-qty" min="0.1" step="0.1" value="1.0">
+      </div>
+      <div class="order-summary">
+        <div class="summary-row">
+          <span>Price per Kg:</span>
+          <span id="summary-unit-price">0 RWF</span>
+        </div>
+        <div class="summary-row">
+          <span>Subtotal:</span>
+          <span id="summary-subtotal">0 RWF</span>
+        </div>
+        <div class="summary-row">
+          <span>e-LinkAcre Service Fee (2%):</span>
+          <span id="summary-fee">0 RWF</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total Amount:</span>
+          <span id="summary-total">0 RWF</span>
+        </div>
+      </div>
+      <button class="confirm-btn">Confirm Purchase & Pay</button>
+    </div>
+  </div>
+</body>
+</html>

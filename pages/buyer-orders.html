@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Orders</title>
+  <link rel="stylesheet" href="../css/buyer-orders.css">
+</head>
+<body>
+  <div class="orders-header">
+    <div>
+      <h1>My Orders</h1>
+      <p>Track orders and follow each shipment step.</p>
+    </div>
+    <button class="order-action">Download list</button>
+  </div>
+
+  <div class="orders-container">
+    <div class="orders-tabs">
+      <button class="tab-btn active">All Orders</button>
+      <button class="tab-btn">Pending</button>
+      <button class="tab-btn">In Transit</button>
+      <button class="tab-btn">Completed</button>
+    </div>
+
+    <table id="orders-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Crop</th>
+          <th>Farmer</th>
+          <th>Quantity</th>
+          <th>Total Cost</th>
+          <th>Order Date</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="order-row" data-status="in-transit">
+          <td>#ELA-2401</td>
+          <td>High-Grade Wheat</td>
+          <td>Jean K. (Musanze)</td>
+          <td>5.0 Tons</td>
+          <td>1,632,000 RWF</td>
+          <td>2026-06-18</td>
+          <td><span class="status-badge in-transit">in-transit</span></td>
+          <td><button class="track-btn">Track</button></td>
+        </tr>
+        <tr class="order-row" data-status="completed">
+          <td>#ELA-2402</td>
+          <td>Long-Grain Rice</td>
+          <td>Anicet M. (Rusizi)</td>
+          <td>8.0 Tons</td>
+          <td>2,856,000 RWF</td>
+          <td>2026-06-12</td>
+          <td><span class="status-badge completed">completed</span></td>
+          <td><button class="track-btn">Track</button></td>
+        </tr>
+        <tr class="order-row" data-status="pending">
+          <td>#ELA-2403</td>
+          <td>Red Sorghum</td>
+          <td>Marie V. (Bugesera)</td>
+          <td>3.5 Tons</td>
+          <td>1,071,000 RWF</td>
+          <td>2026-06-20</td>
+          <td><span class="status-badge pending">pending</span></td>
+          <td><button class="track-btn">Track</button></td>
+        </tr>
+        <tr class="order-row" data-status="completed">
+          <td>#ELA-2404</td>
+          <td>Irish Potatoes</td>
+          <td>Pierre N. (Burera)</td>
+          <td>2.0 Tons</td>
+          <td>612,000 RWF</td>
+          <td>2026-06-05</td>
+          <td><span class="status-badge completed">completed</span></td>
+          <td><button class="track-btn">Track</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="trackModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-track-id">Track Order</h2>
+        <button class="close-btn">&times;</button>
+      </div>
+      <div>
+        <p style="margin: 0; font-size: 14px; color: #64748b;">Crop: <strong id="modal-crop-name" style="color: #0f172a;">-</strong></p>
+        <p style="margin: 5px 0 0 0; font-size: 14px; color: #64748b;">Farmer: <strong id="modal-farmer-name" style="color: #0f172a;">-</strong></p>
+      </div>
+      <div class="timeline" id="tracking-timeline">
+      </div>
+    </div>
+  </div>
+
+<script src="../js/buyer-orders.js"></script>
+</body>
+</html>

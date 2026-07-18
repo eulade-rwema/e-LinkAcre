@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Portal</title>
+  <link rel="stylesheet" href="../css/farmerpage.css">
+</head>
+<body>
+  <div class="header">
+    <div class="left-nav-links">
+      <img src="../images/e-Linkacre logo.png" alt="Logo">
+    </div>
+    <div class="middle-nav-links">
+      <h1>Farmer Portal</h1>
+      <input type="search" id="pageSearch" placeholder="Search pages...">
+    </div>
+    <div class="right-nav-links">
+      <a href="../index.html">Home</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <a href="profile.html" target="contentFrame" class="nav-link active">Profile</a>
+      <a href="inputpage.html" target="contentFrame" class="nav-link">Input Portal</a>
+      <a href="production.html" target="contentFrame" class="nav-link">Production</a>
+      <a href="report.html" target="contentFrame" class="nav-link">Reports</a>
+      <a href="setting.html" target="contentFrame" class="nav-link">Settings</a>
+    </div>
+    <div class="content">
+      <iframe name="contentFrame" id="contentFrame" src="profile.html"></iframe>
+    </div>
+  </div>
+
+  <script src="../js/farmerpage.js"></script>
+</body>
+</html>

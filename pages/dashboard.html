@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Portal Dashboard</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <main class="content">
+    <header class="header">
+      <div>
+        <h1>Government Dashboard</h1>
+        <p>Review progress, approvals, and field updates in one place.</p>
+      </div>
+      <div class="view-switch">
+        <button class="view-btn active" data-range="week">This week</button>
+        <button class="view-btn" data-range="month">This month</button>
+      </div>
+    </header>
+
+    <section class="summary" id="summaryCards">
+      <div class="card blue">
+        <span class="card-label">Institutions</span>
+        <strong>128</strong>
+        <small>+8 this week</small>
+      </div>
+      <div class="card green">
+        <span class="card-label">Farmers</span>
+        <strong>10,550</strong>
+        <small>+240 approved</small>
+      </div>
+      <div class="card orange">
+        <span class="card-label">Reports</span>
+        <strong>3,210</strong>
+        <small>92% submitted</small>
+      </div>
+      <div class="card red">
+        <span class="card-label">Pending</span>
+        <strong>145</strong>
+        <small>14 urgent</small>
+      </div>
+    </section>
+
+    <section class="dash-grid">
+      <div class="dash-box wide">
+        <div class="section-head">
+          <h2>Priority tasks</h2>
+          <span class="pill">Updated now</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Responsibility</th>
+              <th>Region</th>
+              <th>Deadline</th>
+              <th>Officer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Soil fertility test</td><td>Sector level</td><td>2026-06-01</td><td>Sector Agronomist</td></tr>
+            <tr><td>Pest control training</td><td>District level</td><td>2026-06-10</td><td>Master trainer</td></tr>
+            <tr><td>Seed distribution</td><td>All provinces</td><td>2026-05-20</td><td>RAB Agents</td></tr>
+            <tr><td>Report review</td><td>Eastern Province</td><td>2026-06-12</td><td>District Officers</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="dash-box side">
+        <div class="section-head">
+          <h2>Recent activity</h2>
+          <span class="pill">Live</span>
+        </div>
+        <ul class="activity-list">
+          <li>New farmer registration approved <span>10 mins ago</span></li>
+          <li>Institution data updated <span>30 mins ago</span></li>
+          <li>Crop report submitted <span>1 hour ago</span></li>
+          <li>Pending modification request <span>2 hours ago</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="dash-grid lower">
+      <div class="dash-box wide">
+        <div class="section-head">
+          <h2>Crop progress</h2>
+          <span class="pill">Season update</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Crop</th>
+              <th>Region</th>
+              <th>Target</th>
+              <th>Achieved</th>
+              <th>Progress</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Maize</td><td>Eastern Province</td><td>50,000 tons</td><td>49,760 tons</td>
+              <td><div class="progress"><div class="progress-bar" style="width:84%">84%</div></div></td>
+            </tr>
+            <tr>
+              <td>Rice</td><td>Northern Province</td><td>35,449 tons</td><td>29,190 tons</td>
+              <td><div class="progress"><div class="progress-bar" style="width:70%">70%</div></div></td>
+            </tr>
+            <tr>
+              <td>Coffee</td><td>Western Province</td><td>20,890 tons</td><td>18,960 tons</td>
+              <td><div class="progress"><div class="progress-bar" style="width:80%">80%</div></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="dash-box side">
+        <div class="section-head">
+          <h2>Alerts</h2>
+          <span class="pill">Needs attention</span>
+        </div>
+        <ul class="alert-list">
+          <li>Farmer survey deadline approaching</li>
+          <li>System maintenance scheduled</li>
+          <li>Submit monthly reports before Friday</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

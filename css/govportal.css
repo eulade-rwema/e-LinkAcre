@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f7fbff 0%, #eef8f6 100%);
+  color: #16322f;
+}
+
+.header {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  padding: 10px 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.left-nav-links img {
+  width: 120px;
+  height: auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.middle-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.middle-nav-links h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f3d37;
+  margin: 0;
+}
+
+.middle-nav-links input {
+  padding: 8px 12px;
+  border-radius: 999px;
+  width: 220px;
+  border: 1px solid #c7dcd4;
+}
+
+.right-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.right-nav-links a {
+  color: #1f3d37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: white;
+  min-width: 120px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #16322f;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f5f9;
+}
+
+.container {
+  display: flex;
+  min-height: calc(100vh - 78px);
+}
+
+.sidebar {
+  width: 220px;
+  background: #0f766e;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-weight: bold;
+  border-left: 3px solid transparent;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #14b8a6;
+  border-left-color: #ffffff;
+}
+
+.content {
+  flex: 1;
+  background: #f8fcfb;
+  display: flex;
+}
+
+.content iframe {
+  flex: 1;
+  border: none;
+  min-height: 100%;
+}

@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f7fcfa 0%, #e8f6f1 100%);
+  padding: 40px;
+}
+
+.page-title {
+  margin-bottom: 20px;
+}
+
+.page-title h2 {
+  color: #1f3d37;
+  margin: 0 0 4px;
+}
+
+.page-title p {
+  margin: 0;
+  color: #4b5563;
+}
+
+h3 {
+  color: #0f766e;
+}
+
+.report-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  margin-bottom: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #dce8e3;
+  text-align: left;
+}
+
+th {
+  background: #14b8a6;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background: #f7fcfa;
+}
+
+.summary {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.action-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.button {
+  background: #14b8a6;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.95;
+}

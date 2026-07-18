@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buyer Dashboard</title>
+  <link rel="stylesheet" href="../css/buyer-dashboard.css">
+</head>
+<body>
+  <div class="dashboard-header">
+    <div>
+      <h1>Welcome back, Eulade Traders</h1>
+      <p>You have fresh buying updates today.</p>
+    </div>
+    <div class="header-actions">
+      <button class="action-btn primary">New purchase</button>
+      <button class="action-btn">View offers</button>
+    </div>
+  </div>
+
+  <div class="status-message" id="statusMessage">You can review offers and order updates.</div>
+
+  <div class="summary-cards">
+    <div class="card">
+      <span class="card-title">Total Spending</span>
+      <span class="card-value">1,420,000 RWF</span>
+      <span class="card-subtext">+12% from last month</span>
+    </div>
+    <div class="card">
+      <span class="card-title">Active Orders</span>
+      <span class="card-value">4 Orders</span>
+      <span class="card-subtext">2 in transit, 2 pending</span>
+    </div>
+    <div class="card">
+      <span class="card-title">Purchased Quantity</span>
+      <span class="card-value">18.5 Tons</span>
+      <span class="card-subtext">+3.2 Tons this week</span>
+    </div>
+    <div class="card">
+      <span class="card-title">Average Crop Price</span>
+      <span class="card-value">320 RWF/Kg</span>
+      <span class="card-subtext down">-4% market trend</span>
+    </div>
+  </div>
+
+  <div class="dash-sections">
+    <div class="section-box">
+      <div class="section-head">
+        <h2>Recent Orders</h2>
+        <span class="section-hint">Updated live</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Crop</th>
+            <th>Farmer</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#ELA-2401</td>
+            <td>Wheat</td>
+            <td>Jean K. (Musanze)</td>
+            <td>5.0 Tons</td>
+            <td>1,600,000 RWF</td>
+            <td><span class="status-badge in-transit">in-transit</span></td>
+          </tr>
+          <tr>
+            <td>#ELA-2402</td>
+            <td>Rice</td>
+            <td>Anicet M. (Rusizi)</td>
+            <td>8.0 Tons</td>
+            <td>2,800,000 RWF</td>
+            <td><span class="status-badge completed">completed</span></td>
+          </tr>
+          <tr>
+            <td>#ELA-2403</td>
+            <td>Sorghum</td>
+            <td>Marie V. (Bugesera)</td>
+            <td>3.5 Tons</td>
+            <td>1,050,000 RWF</td>
+            <td><span class="status-badge pending">pending</span></td>
+          </tr>
+          <tr>
+            <td>#ELA-2404</td>
+            <td>Irish Potato</td>
+            <td>Pierre N. (Burera)</td>
+            <td>2.0 Tons</td>
+            <td>600,000 RWF</td>
+            <td><span class="status-badge completed">completed</span></td>
+          </tr>
+          <tr>
+            <td>#ELA-2405</td>
+            <td>Maize</td>
+            <td>Grace T. (Nyagatare)</td>
+            <td>6.5 Tons</td>
+            <td>1,950,000 RWF</td>
+            <td><span class="status-badge pending">pending</span></td>
+          </tr>
+          <tr>
+            <td>#ELA-2406</td>
+            <td>Beans</td>
+            <td>Fiston R. (Gicumbi)</td>
+            <td>4.2 Tons</td>
+            <td>1,260,000 RWF</td>
+            <td><span class="status-badge in-transit">in-transit</span></td>
+          </tr>
+          <tr>
+            <td>#ELA-2407</td>
+            <td>Coffee</td>
+            <td>Immaculee D. (Karongi)</td>
+            <td>1.8 Tons</td>
+            <td>900,000 RWF</td>
+            <td><span class="status-badge completed">completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-box-side">
+      <div class="section-head">
+        <h2>Recent Activity</h2>
+        <span class="section-hint pulse">Live</span>
+      </div>
+      <div class="activity-list">
+        <div class="activity-item">
+          <div class="activity-icon">🌾</div>
+          <div class="activity-details">
+            <p>New wheat listing added in <strong>Musanze</strong> (12 Tons available)</p>
+            <span class="activity-time">10 mins ago</span>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">✅</div>
+          <div class="activity-details">
+            <p>Rice purchase from <strong>Bugarama</strong> has been confirmed</p>
+            <span class="activity-time">1 hour ago</span>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">📉</div>
+          <div class="activity-details">
+            <p>Sorghum market prices decreased by <strong>5 RWF/Kg</strong></p>
+            <span class="activity-time">5 hours ago</span>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">📦</div>
+          <div class="activity-details">
+            <p>Order <strong>#ELA-2402</strong> has been shipped by farmer Anicet</p>
+            <span class="activity-time">Yesterday</span>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">📈</div>
+          <div class="activity-details">
+            <p>Maize demand climbed in <strong>Eastern Province</strong> this morning</p>
+            <span class="activity-time">Yesterday</span>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">🧾</div>
+          <div class="activity-details">
+            <p>Invoice for <strong>#ELA-2405</strong> is ready for review</p>
+            <span class="activity-time">2 days ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-panel">
+        <h3>Market Trends</h3>
+        <p>Rice demand is rising in Eastern Province this week.</p>
+        <button class="mini-btn" id="pulseBtn">See trend</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/buyer-dashboard.js"></script>
+</body>
+</html>

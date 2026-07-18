@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Request New Material</title>
+  <link rel="stylesheet" href="../css/new-inputpage.css">
+</head>
+<body>
+  <section class="container">
+    <div class="form-section">
+      <h3>Request new material</h3>
+      <form id="requestForm">
+        <input type="text" placeholder="Material" required>
+        <input type="number" placeholder="Land size (hectares)" required>
+        <input type="text" placeholder="Supplier company" required>
+        <select required>
+          <option value="">Payment status</option>
+          <option value="Paid">Paid</option>
+          <option value="Unpaid">Unpaid</option>
+        </select>
+        <input type="text" placeholder="Proof of payment" required>
+        <button type="submit">Submit request</button>
+        <p id="formMsg" class="form-msg">Your request will be sent to the input team.</p>
+      </form>
+    </div>
+  </section>
+  <script src="../js/farmer-settings.js"></script>
+</body>
+</html>
+ 

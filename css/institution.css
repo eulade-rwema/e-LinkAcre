@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f7fbff 0%, #eef8f6 100%);
+  color: #1f2937;
+}
+
+section {
+  padding: 24px;
+}
+
+.page-head h2 {
+  margin: 0 0 4px;
+  color: #0f172a;
+}
+
+.page-head p {
+  margin: 0 0 20px;
+  color: #64748b;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.info-item {
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.pill {
+  font-size: 12px;
+  font-weight: 700;
+  background: #ecfdf5;
+  color: #065f46;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.responsibilities-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background: #14b8a6;
+  color: #fff;
+}
+
+tr:hover {
+  background: #f8fffb;
+}
